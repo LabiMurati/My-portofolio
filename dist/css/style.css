@@ -1,0 +1,860 @@
+/*====================================
+=            GRID GLOBALS            =
+====================================*/
+
+/*=====  End of GRID GLOBALS  ======*/
+
+/*===================================
+=            TRANSITIONS            =
+===================================*/
+
+/*=====  End of TRANSITIONS  ======*/
+
+/*=================================
+=            STRUCTURE            =
+=================================*/
+
+/*=====  End of STRUCTURE  ======*/
+
+/*==============================
+=            COLORS            =
+==============================*/
+
+/*=====  End of COLORS  ======*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+header,
+main,
+footer {
+  float: left;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.headerWrap,
+.mainWrap,
+.footerWrap {
+  position: relative;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+div,
+ul,
+input,
+blockquote,
+span,
+button,
+i,
+b,
+em,
+strong {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/*=====================================
+=            MEDIA QUERIES            =
+=====================================*/
+
+/*=====  End of MEDIA QUERIES  ======*/
+
+/*==============================
+=            MIXINS            =
+==============================*/
+
+/*=====  End of MIXINS  ======*/
+
+/*========================================
+=            EXTEND SELECTORS            =
+========================================*/
+
+.container,
+.row {
+  *zoom: 1;
+}
+
+.container:before,
+.row:before,
+.container:after,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.container:after,
+.row:after {
+  clear: both;
+}
+
+.headerWrap,
+.mainWrap,
+.footerWrap {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+/*=====  End of EXTEND SELECTORS  ======*/
+
+.column-1 {
+  width: 8.3333333333%;
+}
+
+.column-2 {
+  width: 16.6666666667%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.3333333333%;
+}
+
+.column-5 {
+  width: 41.6666666667%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-7 {
+  width: 58.3333333333%;
+}
+
+.column-8 {
+  width: 66.6666666667%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.3333333333%;
+}
+
+.column-11 {
+  width: 91.6666666667%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+[class*=column-] {
+  float: left;
+  min-height: 1px;
+}
+
+.has_gutter [class*=column-] {
+  padding: 0 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .container {
+    max-width: 732px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .show-mob {
+    display: none !important;
+  }
+
+  .show-tab {
+    display: none !important;
+  }
+
+  .show-tab-big {
+    display: none !important;
+  }
+}
+
+.hidden-mob {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .column-mob-1 {
+    width: 8.3333333333%;
+  }
+
+  .column-mob-2 {
+    width: 16.6666666667%;
+  }
+
+  .column-mob-3 {
+    width: 25%;
+  }
+
+  .column-mob-4 {
+    width: 33.3333333333%;
+  }
+
+  .column-mob-5 {
+    width: 41.6666666667%;
+  }
+
+  .column-mob-6 {
+    width: 50%;
+  }
+
+  .column-mob-7 {
+    width: 58.3333333333%;
+  }
+
+  .column-mob-8 {
+    width: 66.6666666667%;
+  }
+
+  .column-mob-9 {
+    width: 75%;
+  }
+
+  .column-mob-10 {
+    width: 83.3333333333%;
+  }
+
+  .column-mob-11 {
+    width: 91.6666666667%;
+  }
+
+  .column-mob-12 {
+    width: 100%;
+  }
+
+  .show-mob {
+    display: block !important;
+  }
+
+  .hidden-mob {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .column-tab-1 {
+    width: 8.3333333333%;
+  }
+
+  .column-tab-2 {
+    width: 16.6666666667%;
+  }
+
+  .column-tab-3 {
+    width: 25%;
+  }
+
+  .column-tab-4 {
+    width: 33.3333333333%;
+  }
+
+  .column-tab-5 {
+    width: 41.6666666667%;
+  }
+
+  .column-tab-6 {
+    width: 50%;
+  }
+
+  .column-tab-7 {
+    width: 58.3333333333%;
+  }
+
+  .column-tab-8 {
+    width: 66.6666666667%;
+  }
+
+  .column-tab-9 {
+    width: 75%;
+  }
+
+  .column-tab-10 {
+    width: 83.3333333333%;
+  }
+
+  .column-tab-11 {
+    width: 91.6666666667%;
+  }
+
+  .column-tab-12 {
+    width: 100%;
+  }
+
+  .show-tab {
+    display: block !important;
+  }
+
+  .hidden-tab {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .column-tab-big-1 {
+    width: 8.3333333333%;
+  }
+
+  .column-tab-big-2 {
+    width: 16.6666666667%;
+  }
+
+  .column-tab-big-3 {
+    width: 25%;
+  }
+
+  .column-tab-big-4 {
+    width: 33.3333333333%;
+  }
+
+  .column-tab-big-5 {
+    width: 41.6666666667%;
+  }
+
+  .column-tab-big-6 {
+    width: 50%;
+  }
+
+  .column-tab-big-7 {
+    width: 58.3333333333%;
+  }
+
+  .column-tab-big-8 {
+    width: 66.6666666667%;
+  }
+
+  .column-tab-big-9 {
+    width: 75%;
+  }
+
+  .column-tab-big-10 {
+    width: 83.3333333333%;
+  }
+
+  .column-tab-big-11 {
+    width: 91.6666666667%;
+  }
+
+  .column-tab-big-12 {
+    width: 100%;
+  }
+
+  .show-tablet-big {
+    display: block !important;
+  }
+
+  .hidden-tablet-big {
+    display: none !important;
+  }
+}
+
+.is-full-width {
+  width: 100vw !important;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  max-width: none;
+}
+
+.no_padding {
+  padding: 0 !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.no-flexboxlegacy body {
+  display: block !important;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+  position: relative;
+  overflow-x: hidden;
+}
+
+input,
+textarea,
+select,
+option {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+option::-webkit-input-placeholder {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  opacity: 1;
+  font-size: 14px;
+  color: black;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+select:-moz-placeholder,
+option:-moz-placeholder {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  opacity: 1;
+  font-size: 14px;
+  color: black;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder,
+option::-moz-placeholder {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  opacity: 1;
+  font-size: 14px;
+  color: black;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder,
+option:-ms-input-placeholder {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  opacity: 1;
+  font-size: 14px;
+  color: black;
+}
+
+.iphone input,
+.iphone textarea,
+.iphone select,
+.iphone option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/*=================================
+=            Normalize            =
+=================================*/
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+/* Do not show the outline on the skip link target. */
+
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=====  End of Normalize  ======*/
+
+body {
+  background: blue;
+}
+
+.test {
+  width: 100%;
+}
+
