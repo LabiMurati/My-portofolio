@@ -1,0 +1,88 @@
+/* This media query is used only for mobile devices */
+@media only screen and (max-width: 767px) {
+  .nav_wrapper {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px 35px;
+    background: #f2f3f3;
+    transition: all 0.3s ease-in-out;
+  }
+  .headerWrap {
+    .hamburger {
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .first_banner::after {
+    width: 50%;
+  }
+  .banner_wrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .circle-1 {
+    margin-left: 0px;
+    padding: 20px;
+    .circle-2 {
+      padding: 20px;
+      .circle-3 {
+        padding: 20px;
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .wrapper {
+    .title_wrapper {
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+      .title__content {
+        h2 {
+          font-size: 35px;
+        }
+        h1 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .icons__content {
+    flex-direction: row;
+    margin-top: 40px;
+    p {
+      transform: none;
+      color: #222222;
+    }
+    .line--icon {
+      padding-top: 0px;
+      padding-right: 86px;
+      margin-top: 0px;
+    }
+    .social_icons {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0px;
+      img {
+        margin-left: 20px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+/* This media query is used only for small tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+}
+/* This media query is used only for big tablet devices */
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+}
